@@ -1,0 +1,210 @@
+Navbar .navbar-brand {
+	font: 32px Poppins;
+}
+
+/* Jumbotron */
+.jumbotron {
+	background: url(static/garasi.jpg);
+	background-size: cover;
+	height: 450px;
+	position: relative;
+	z-index: -1;
+}
+
+.jumbotron::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	background-image: linear-gradient(to top, rgb(253, 247, 214), rgb(196, 255, 213));
+	bottom: 0;
+}
+
+.jumbotron .container {
+	color: rgb(255, 248, 228);
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.jumbotron .display-4 {
+	font-weight: 200;
+	font-size: 2.6em;
+	margin-top: 100px;
+	text-shadow: 1px 1px 1px rgba(199, 199, 199, 0.5);
+	margin-bottom: 50px;
+}
+
+.jumbotron .display-4 span {
+	font-weight: 500;
+}
+
+/* Info Panel */
+.info-panel {
+	background-color: rgb(254, 255, 219);
+	padding: 30px;
+	margin-top: -150px;
+	border-radius: 70px;
+	box-shadow: 0 3px 20px rgba(255, 241, 164, 0.781);
+}
+.info-panel-info {
+	background-color: #fffffc;
+	padding: 30px;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	border-radius: 70px;
+	box-shadow: 0 3px 20px rgb(196, 230, 176);
+}
+
+.info-panel-login {
+	background-color: #fffffc;
+	padding: 30px;
+	margin-top: 150px;
+	border-radius: 30px;
+	box-shadow: 0 3px 20px #fe4e00;
+}
+
+.info-panel-galeri {
+	background-color: #fffffc;
+	padding: 30px;
+	margin-top: 50px;
+	border-radius: 5px;
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
+}
+
+.info-panel h4 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+
+.info-panel p {
+	font-size: 14px;
+	font-weight: lighter;
+	color: rgb(224, 255, 194);
+}
+
+/* Workingspace */
+.workingspace {
+	margin-top: 120px;
+	text-align: center;
+}
+
+.workingspace img {
+	margin-bottom: 20px;
+}
+
+.workingspace h2 {
+	font-size: 52px;
+	text-transform: uppercase;
+	font-weight: 200;
+}
+
+.workingspace h2 span {
+	font-weight: 450;
+}
+
+.workingspace p {
+	font-size: 18px;
+	color: #4c4d4a;
+	font-weight: 180;
+}
+
+/* Testimonial */
+.testimonial {
+	margin-top: 140px;
+}
+
+.testimonial p {
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: 150;
+	font-style: medium;
+	margin-bottom: 30px;
+}
+
+.testimonial img {
+	width: 80px;
+	height: 80px;
+	margin: 10px;
+	border-radius: 50%;
+	filter: grayscale(1);
+}
+
+.testimonial .img-main {
+	width: 100px;
+	height: 100px;
+	margin-top: -5px;
+	filter: grayscale(0);
+}
+
+.testimonial .info-text h5 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.testimonial .info-text p {
+	font-size: 12px;
+	margin-top: -5px;
+	color: #d6b64d;
+	font-style: normal;
+}
+
+/* Utility */
+.tombol {
+	border-radius: 40px;
+	text-transform: uppercase;
+}
+
+/* RESPONSIVE */
+@media (min-width: 992px) {
+	.navbar {
+		padding-top: 20px;
+	}
+
+	.navbar-brand,
+	.nav-link {
+		color: rgba(255, 243, 226, 0.89) !important;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	}
+
+	.nav-link {
+		text-transform: uppercase;
+		margin-right: 20px;
+	}
+
+	.nav-link:hover::after,
+	.nav-link.active::after {
+		content: "";
+		display: block;
+		border-bottom: 3px solid #f0b433;
+		margin: auto;
+		margin-bottom: -8px;
+		width: 50%;
+		padding-top: 5px;
+	}
+
+	.jumbotron {
+		margin-top: -90px;
+		height: 640px;
+	}
+
+	.jumbotron .display-4 {
+		font-size: 5em;
+		margin-top: 150px;
+	}
+	.jumbotron .display-5 {
+		font-size: 2em;
+		margin-top: 150px;
+	}
+
+	.workingspace {
+		text-align: left;
+	}
+
+	.testimonial p {
+		font-size: 2em;
+	}
+}
